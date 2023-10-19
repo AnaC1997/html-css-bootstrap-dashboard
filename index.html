@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--inizio Header-->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo.svg" alt="logo Boolean" width="100" height="40">
+                </a>
+                <nav class="navbar bg-body-tertiary w-75">
+                    <form class="container-fluid ">
+                        <div class="input-group ">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Prova a cercare Lezioni di Laravel"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                            <div class="container-icon ">
+                                <i class="fas fa-bars"></i>
+                                <i class="fas fa-question-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fas fa-bell"></i></button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <p>ana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <!--inizio Main-->
+    <main class="d-flex flex-wrap overflow-auto">
+        <div class="row">
+            <div class="col-2 vh-100 bc-dark-blue white columnLeft">
+                <div class="container ">
+                    <div class="versione-desktop d-flex flex-column justify-content-between d-md-block d-lg-block d-xl-block d-sm-none">
+                        <div class=" ">
+                            <span><i class="fas fa-home"></i> Home</span>
+                            <span><i class="fas fa-chart-bar"></i> Stats</span>
+                            <span><i class="fas fa-chart-line"></i> Signals</span>
+                        </div>
+                        <div class="">
+                            <span><i class="fas fa-cog"></i> Admin</span>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="versione-mobile d-flex flex-column justify-content-between d-md-none d-lg-none d-xl-none d-sm-block">
+                        <div class="">
+                            <span><i class="fas fa-home"></i></span>
+                            <span><i class="fas fa-chart-bar"></i> </span>
+                            <span><i class="fas fa-chart-line"></i></span>
+                        </div>
+                        <div class="">
+                            <span><i class="fas fa-cog"></i></span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 header bc-blue pt-4 ">
+                <div class="container">
+                    <p>ciao </p>
+                    <p>ciao </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, recusandae! Vel, quos deleniti!
+                        Dolore incidunt commodi provident, cumque unde, rem repudiandae itaque optio quidem dolorem,
+                        dolorum maiores cupiditate sapiente blanditiis.</p>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        
+
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

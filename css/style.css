@@ -1,0 +1,28 @@
+.bc-dark-blue{
+    background-color: #0D253B;
+}
+
+.bc-blue{
+    background-color: #1D72E8;
+}
+
+.white{
+    color:white
+}
+
+.header{
+    max-height: 100px; 
+   
+    
+
+}
+
+.columnLeft{
+  height: calc(100vh - 100px);
+  
+  
+}
+
+.space-between{
+    justify-content: space-between;
+}
