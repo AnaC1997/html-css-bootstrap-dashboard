@@ -6,23 +6,31 @@
     background-color: #1D72E8;
 }
 
+.bc-royalBue{
+    background-color: #175CBB;
+}
+
 .white{
     color:white
 }
 
 .header{
     max-height: 100px; 
-   
-    
+     
 
 }
 
 .columnLeft{
   height: calc(100vh - 100px);
+  background-image: url(../img/sidebar-bg.png);
   
   
 }
 
-.space-between{
-    justify-content: space-between;
+.img-icon{
+    width: 20px;
+}
+.img-stats{
+    width: 100%;
+    
 }
