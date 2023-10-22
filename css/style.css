@@ -1,3 +1,38 @@
+.containerBody{
+    height: 100vh;
+    width: 100%;
+
+}
+
+header{
+    height: 5rem;
+    width: 100%;
+   
+}
+
+nav, main{
+    height: calc(100vh - 5rem);
+}
+
+nav{
+    width: 8rem
+}
+
+main{
+    width: calc(100% - 8rem);
+    overflow-y: auto;
+}
+
+.img-icon{
+    width: 20px;
+}
+.img-stats{
+    width: 100%;
+    
+}
+
+/********Color******/
+
 .bc-dark-blue{
     background-color: #0D253B;
 }
@@ -10,27 +45,21 @@
     background-color: #175CBB;
 }
 
+
 .white{
     color:white
 }
 
-.header{
-    max-height: 100px; 
-     
+/******Media query******/
 
-}
+@media only screen and (max-width:720px) {
+    .wsm100{
+        min-width: 100%;
+    }
+    
+    .d-s-none{
+        display: none;
+    }
 
-.columnLeft{
-  height: calc(100vh - 100px);
-  background-image: url(../img/sidebar-bg.png);
-  
-  
-}
-
-.img-icon{
-    width: 20px;
-}
-.img-stats{
-    width: 100%;
     
 }

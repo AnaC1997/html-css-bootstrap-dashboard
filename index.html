@@ -14,221 +14,323 @@
 </head>
 
 <body>
-    <!--inizio Header-->
-    <header>
-        <nav class="navbar bg-body-tertiary">
+
+    <div id="containerBody" class="d-flex flex-wrap">
+        <!-- Header -->
+        <header class="d-flex align-items-center">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/img/logo.svg" alt="logo Boolean" width="100" height="40">
-                </a>
-                <nav class="navbar bg-body-tertiary w-75">
-                    <form class="container-fluid ">
-                        <div class="input-group ">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Prova a cercare Lezioni di Laravel"
-                                aria-label="Username" aria-describedby="basic-addon1">
-                            <div class="container-icon ">
-                                <i class="fas fa-bars"></i>
-                                <i class="fas fa-question-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                                <i class="fas fa-bell"></i>
-                            </div>
-
-                        </div>
-                    </form>
-                </nav>
-            </div>
-        </nav>
-    </header>
-
-    <!--inizio Main-->
-    <main class="d-flex flex-wrap overflow-auto">
-        <div class="row">
-            <div class="col-2 vh-100 bc-dark-blue white columnLeft">
-                <div class="container ">
-                    <div
-                        class="versione-desktop d-flex flex-column justify-content-between d-md-block d-lg-block d-xl-block d-sm-none">
-                        <div class=" ">
-                            <span><i class="fas fa-home"></i> Home</span>
-                            <span><i class="fas fa-chart-bar"></i> Stats</span>
-                            <span><i class="fas fa-chart-line"></i> Signals</span>
-                        </div>
-                        <div class="">
-                            <span><i class="fas fa-cog"></i> Admin</span>
-
-                        </div>
-
+                <div class="row">
+                    <div class="col-auto d-flex align-items-center">
+                        <img class="d-none d-md-block my_logo img-fluid" src="/img/logo.svg" alt="logo Desktop"
+                            width="100" height="40">
+                        <img class="d-md-none my_logo img-fluid" src="/img/mobile-logo.png" alt="logo Mobile"
+                            width="100" height="40">
                     </div>
-
-                    <div
-                        class="versione-mobile d-flex flex-column justify-content-between d-md-none d-lg-none d-xl-none d-sm-block">
-                        <div class="">
-                            <span><i class="fas fa-home"></i></span>
-                            <span><i class="fas fa-chart-bar"></i> </span>
-                            <span><i class="fas fa-chart-line"></i></span>
+                    <div class="col d-flex align-items-center">
+                        <div class="input-group">
+                            <div class="input-group-text" id="btnGroupAddon">@</div>
+                            <input type="text" class="form-control" placeholder="Prova a cercare Lezioni di Laravel"
+                                aria-label="Input group example" aria-describedby="btnGroupAddon">
                         </div>
-                        <div class="">
-                            <span><i class="fas fa-cog"></i></span>
-
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="container-icon px-5">
+                            <i class="fas fa-bars px-1"></i>
+                            <i class="fas fa-question-circle  px-1"></i>
+                            <i class="fas fa-ellipsis-v px-1"></i>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturaione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <div class="col-10 header bc-blue pt-4 ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="">
-                                <h1 class="white d-inline">Boolean</h1>
-                                <span class="badge rounded-pill bc-royalBue">Piano Blaza</span>
-                            </div>
+        </header>
 
+        <!-- Sidebar -->
+        <nav class="bc-dark-blue p-2 ">
+            <div class="white">
+                <div class="d-md-block d-lg-block d-xl-block d-sm-none d-flex justify-content-between">
+                    <div class="d-flex flex-column">
+                        <span><i class="fas fa-home"></i> Home</span>
+                        <span><i class="fas fa-chart-bar"></i> Stats</span>
+                        <span><i class="fas fa-chart-line"></i> Signals</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-cog"></i> Admin</span>
+                    </div>
+                </div>
+
+                <div class="d-md-none d-lg-none d-xl-none d-sm-block">
+                    <div class="columnLeft d-flex flex-column ">
+                        <span><i class="fas fa-home"></i></span>
+                        <span><i class="fas fa-chart-bar"></i> </span>
+                        <span><i class="fas fa-chart-line"></i></span>
+                    </div>
+                    <div class="">
+                        <span><i class="fas fa-cog"></i></span>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Section1 -->
+            <section class="">
+                <div class="containter-fluid  bc-blue ">
+                    <div class="row justify-content-between ">
+                        <div class="col-6 ">
+                            <h1 class="white d-inline">Boolean</h1>
+                            <span class="badge rounded-pill bc-royalBue">Piano Blaza</span>
                             <div>
-                                <span class="badge rounded-pill bc-royalBue">3 app</span>
-                                <i class="fas fa-angle-double-right white"></i>
-                                <span class="badge rounded-pill bc-royalBue">Boolen mobile app</span>
-                                <span class="badge rounded-pill bc-royalBue">Boolen web app</span>
-                                <span class="badge rounded-pill bc-royalBue">Boolen app</span>
+                                <span class="badge rounded-pill bc-royalBue ">3 app</span>
+                                <i class="fas fa-angle-double-right white "></i>
+                                <i class="fas fa-plus-circle white d-md-none d-lg-none d-sm-inline"></i>
+                                <span class="badge rounded-pill bc-royalBue d-sm-none d-md-inline d-s-none">Boolen
+                                    mobile app</span>
+                                <span class="badge rounded-pill bc-royalBue d-sm-none d-md-inline d-s-none">Boolen web
+                                    app</span>
+                                <span class="badge rounded-pill bc-royalBue d-sm-none d-md-inline d-s-none">Boolen
+                                    app</span>
                             </div>
                         </div>
-
                         <div class="col-3 white">
                             <p>Studenti online negli ultimi 30 minuti</p>
-
+                            <p>125</p>
                         </div>
+                        <div class="col-auto ">
 
-                        <div class="col-3 white d-flex">
-                            <div>
-                                <p>Nuovo Studente</p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            <div class="d-inline">
+                                <p class="white ">Nuovo Studente</p>
+
+                                <button class="btn btn-primary d-inline" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                     <i class="fas fa-plus-square "></i></button>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                <div class="offcanvas offcanvas-end wsm100" tabindex="-1" id="offcanvasRight"
                                     aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                        </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        <p>ana</p>
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="validationDefault01" class="form-label">Name</label>
+                                                <input type="text" class="form-control" id="validationDefault01"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationDefault02" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="validationDefault02"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationDefaultUsername" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                                    <input type="text" class="form-control"
+                                                        id="validationDefaultUsername"
+                                                        aria-describedby="inputGroupPrepend2" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationDefault03" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="validationDefault03"
+                                                    required>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationDefault04" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="validationDefault04"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationDefault04" class="form-label">Cita</label>
+                                                <input type="text" class="form-control" id="validationDefault05"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom04" class="form-label">Stato</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                    <option selected disabled value=""></option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="validationDefault04" class="form-label">Cap</label>
+                                                <input type="text" class="form-control" id="validationDefault05"
+                                                    value="" required>
+                                            </div>
+                                            <div class="mb-12">
+                                                Foto
+                                                <input type="file" class="form-control" aria-label="file example"
+                                                    required>
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck2" required>
+                                                    <label class="form-check-label" for="invalidCheck2">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">Salva</button>
+                                                <button class="btn btn-secondary" type="submit">Svuota</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Section2 -->
+            <section>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8  col-md-8 col-sm-12">
                             <div class="pt-3">
 
-                                <ul class="list-group">
-                                    <ul class="list-group list-group-horizontal list-group-flush">
-                                        <li class="list-group-item disabled " aria-disabled="true">Prossime classi</li>
-                                    </ul>
+                                <div class="card">
+                                    <div class="card-header">Prossime Classi</div>
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 50%;" scope="col">Nome</th>
+                                                    <th style="width: auto;" scope="col">Data Inizio</th>
+                                                    <th style="width: auto;" scope="col">ROI</th>
+                                                    <th style="width: auto;" scope="col">Stato</th>
+                                                    <th style="width: auto;" scope="col">Azione</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th><img class="img-icon" src="img/class-avatar.jpg" alt=""> Clase
+                                                        75
+                                                    </th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-primary">Done</span></td>
+                                                    <td><i class="fas fa-edit"></i> <i class="fas fa-trash"></i> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><img class="img-icon" src="img/class-avatar.jpg" alt=""> Clase
+                                                        75
+                                                    </th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-danger">Done</span></td>
+                                                    <td><i class="fas fa-edit"></i> <i class="fas fa-trash"></i> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><img class="img-icon" src="img/class-avatar.jpg" alt=""> Clase
+                                                        75
+                                                    </th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td> <span class="badge text-bg-warning">Done</span> </td>
+                                                    <td><i class="fas fa-edit"></i> <i class="fas fa-trash"></i> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><img class="img-icon" src="img/class-avatar.jpg" alt=""> Clase
+                                                        75
+                                                    </th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td> <span class="badge text-bg-info">Done</span> </td>
+                                                    <td><i class="fas fa-edit"></i> <i class="fas fa-trash"></i> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
-                                    <ul class="list-group list-group-horizontal list-group-flush">
-                                        <li class="list-group-item">Nome</li>
-                                        <li class="list-group-item">data inizio </li>
-                                        <li class="list-group-item">ROI</li>
-                                        <li class="list-group-item">Stato </li>
-                                        <li class="list-group-item">Azione </li>
-                                    </ul>
-                                    <ul class="list-group list-group-horizontal list-group-flush">
-                                        <li class="list-group-item"><img class="img-icon" src="img/class-avatar.jpg"
-                                                alt="">
-                                            Clase 75</li>
-                                        <li class="list-group-item">15 feb 2021 </li>
-                                        <li class="list-group-item">20%</li>
-                                        <li class="list-group-item"><span class="badge text-bg-primary">Done</span></li>
-                                        <li class="list-group-item"><i class="fas fa-edit"></i> <i
-                                                class="fas fa-trash"></i>
-                                    </ul>
-                                    <ul class="list-group list-group-horizontal list-group-flush">
-                                        <li class="list-group-item"><img class="img-icon" src="img/class-avatar.jpg"
-                                                alt="">
-                                            Clase 75</li>
-                                        <li class="list-group-item">15 feb 2021 </li>
-                                        <li class="list-group-item">20%</li>
-                                        <li class="list-group-item"><span class="badge text-bg-primary">Done</span></li>
-                                        <li class="list-group-item"><i class="fas fa-edit"></i> <i
-                                                class="fas fa-trash"></i>
-                                    </ul>
-                                    <ul class="list-group list-group-horizontal list-group-flush">
-                                        <li class="list-group-item"><img class="img-icon" src="img/class-avatar.jpg"
-                                                alt="">
-                                            Clase 75</li>
-                                        <li class="list-group-item">15 feb 2021 </li>
-                                        <li class="list-group-item">20%</li>
-                                        <li class="list-group-item"><span class="badge text-bg-primary">Done</span></li>
-                                        <li class="list-group-item"><i class="fas fa-edit"></i> <i
-                                                class="fas fa-trash"></i>
-                                    </ul>
-                                    <ul class="list-group list-group-horizontal list-group-flush">
-                                        <li class="list-group-item"><img class="img-icon" src="img/class-avatar.jpg"
-                                                alt="">
-                                            Clase 75</li>
-                                        <li class="list-group-item">15 feb 2021 </li>
-                                        <li class="list-group-item">20%</li>
-                                        <li class="list-group-item"><span class="badge text-bg-primary">Done</span></li>
-                                        <li class="list-group-item"><i class="fas fa-edit"></i> <i
-                                                class="fas fa-trash"></i>
-                                    </ul>
-                                </ul>
+                                    </div>
+                                </div>
+
+
                             </div>
 
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            first item's accordion body.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            second item's accordion body. Let's imagine this being filled with some
-                                            actual content.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            third item's accordion body. Nothing more exciting happening here in terms
-                                            of content, but just filling up the space to make it look, at least at first
-                                            glance, a bit more representative of how this would look in a real-world
-                                            application.</div>
+                            <div class="card mt-3">
+                                <div class="card-header"> F.A.Q.</div>
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion,
+                                                    which is
+                                                    intended to demonstrate the <code>.accordion-flush</code> class.
+                                                    This is the
+                                                    first item's accordion body.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion,
+                                                    which is
+                                                    intended to demonstrate the <code>.accordion-flush</code> class.
+                                                    This is the
+                                                    second item's accordion body. Let's imagine this being filled with
+                                                    some
+                                                    actual content.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion,
+                                                    which is
+                                                    intended to demonstrate the <code>.accordion-flush</code> class.
+                                                    This is the
+                                                    third item's accordion body. Nothing more exciting happening here in
+                                                    terms
+                                                    of content, but just filling up the space to make it look, at least
+                                                    at first
+                                                    glance, a bit more representative of how this would look in a
+                                                    real-world
+                                                    application.</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -236,55 +338,59 @@
                         </div>
 
                         <div class="col-lg-4  col-md-4 col-sm-12 pt-3">
-                            <div>
-                                <ul class="list-group">
-                                    <li class="list-group-item disabled" aria-disabled="true">Todo</li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value=""
-                                            id="firstCheckbox">
-                                        <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value=""
-                                            id="secondCheckbox">
-                                        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value=""
-                                            id="thirdCheckbox">
-                                        <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-                                    </li>
-                                </ul>
+                            <div class="card">
+                                <div class="card-header">Todo</div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">First
+                                                checkbox</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="secondCheckbox">
+                                            <label class="form-check-label" for="secondCheckbox">Second
+                                                checkbox</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="thirdCheckbox">
+                                            <label class="form-check-label" for="thirdCheckbox">Third
+                                                checkbox</label>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
-                            <div class="pt-3">
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><img class="img-stats" src="img/stats.jpeg"
+                                                alt="stats">
+                                            <strong> Utenti Attivi <br> Lista degli utenti attivi in piattaforma
+                                                nell'ultimo mese </strong>
+                                        </li>
+                                        <li class="list-group-item">Gennaio:1200</li>
+                                        <li class="list-group-item">Febbraio:1200</li>
+                                        <li class="list-group-item">Marz0:1200</li>
+                                        <li class="list-group-item"><a href=""> Vizualizza report
+                                                approfondito</a></li>
 
-                                <ul class="list-group">
-                                    <li class="list-group-item"><img class="img-stats" src="img/stats.jpeg" alt="stats">
-                                        <strong> Utenti Attivi <br> Lista degli utenti attivi in piattaforma
-                                        nell'ultimo mese </strong></li>
-                                    <li class="list-group-item">Gennaio:1200</li>
-                                    <li class="list-group-item">Febbraio:1200</li>
-                                    <li class="list-group-item">Marz0:1200</li>
-                                    <li class="list-group-item"><a href=""> Vizualizza report approfondito</a></li>
+                                    </ul>
+                                </div>
 
-                                </ul>
                             </div>
                         </div>
                     </div>
 
+
                 </div>
+            </section>
 
-            </div>
-        </div>
-
-
-
-
-
-
-
-    </main>
-
+        </main>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
