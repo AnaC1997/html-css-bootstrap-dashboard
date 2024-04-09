@@ -1,8 +1,4 @@
-.containerBody{
-    height: 100vh;
-    width: 100%;
 
-}
 
 header{
     height: 5rem;
@@ -60,8 +56,5 @@ main{
     .d-s-none{
         display: none;
     }
-
-    
-
     
 }
